@@ -1,0 +1,20 @@
+[
+  {
+    "name": "world_map",
+    "location_size": 32,
+    "location_border_thickness": 4,
+    "img": "images/maps/world_map.png"
+  },
+  {
+    "name": "chaos_shrine",
+    "location_size": 32,
+    "location_border_thickness": 4,
+    "img": "images/maps/chaos_shrine.png"
+  },
+  {
+    "name": "marsh_cave",
+    "location_size": 32,
+    "location_border_thickness": 4,
+    "img": "images/maps/marsh_cave.png"
+  }
+]

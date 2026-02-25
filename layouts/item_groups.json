@@ -1,0 +1,58 @@
+{
+	"crystals_group": {
+		"type": "itemgrid",
+		"h_alignment": "left",
+		"item_margin": "1,2",
+		"rows": [
+			[
+				"earth_crystal",
+				"fire_crystal",
+				"water_crystal",
+				"wind_crystal",
+				"crystals_required"
+			]
+		]
+	},
+	"key_items_group": {
+		"type": "itemgrid",
+		"h_alignment": "left",
+		"item_margin": "1,2",
+		"rows": [
+			[
+				"lute",
+				"mystic_key",
+				"earth_rod",
+				"chime",
+				"warp_cube",
+				"ship",
+				"canoe",
+				"airship",
+				"oxyale",
+				"levistone",
+				"rats_tail",
+				"rosetta_stone",
+				"crystal_eye",
+				"star_ruby",
+				"nitro_powder",
+				"bottled_faerie",
+				"adamantite",
+				"lute_tablature"
+			]
+		]
+	},
+	"jobs_group": {
+		"type": "itemgrid",
+		"h_alignment": "left",
+		"item_margin": "1,2",
+		"rows": [
+			[
+				"warrior_job",
+				"thief_job",
+				"monk_job",
+				"white_mage_job",
+				"black_mage_job",
+				"red_mage_job"
+			]
+		]
+	}
+}

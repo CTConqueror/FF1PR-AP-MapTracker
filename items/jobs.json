@@ -1,0 +1,92 @@
+[
+	{
+        "name": "Warrior",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/warrior.png",
+                "codes": "warrior_job"
+            },
+            {
+                "img": "images/jobs/knight.png",
+                "codes": "warrior_job,knight_job"
+            }
+        ]
+    },
+    	{
+        "name": "Thief",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/thief.png",
+                "codes": "thief_job"
+            },
+            {
+                "img": "images/jobs/ninja.png",
+                "codes": "thief_job,ninja_job"
+            }
+        ]
+    },
+    	{
+        "name": "Monk",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/monk.png",
+                "codes": "monk_job"
+            },
+            {
+                "img": "images/jobs/master.png",
+                "codes": "monk_job,master_job"
+            }
+        ]
+    },
+    	{
+        "name": "White Mage",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/white_mage.png",
+                "codes": "white_mage_job"
+            },
+            {
+                "img": "images/jobs/white_wizard.png",
+                "codes": "white_mage_job,white_wizard_job"
+            }
+        ]
+    },
+    	{
+        "name": "Black Mage",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/black_mage.png",
+                "codes": "black_mage_job"
+            },
+            {
+                "img": "images/jobs/black_wizard.png",
+                "codes": "black_mage_job,black_wizard_job"
+            }
+        ]
+    },
+    	{
+        "name": "Red Mage",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/jobs/red_mage.png",
+                "codes": "red_mage_job"
+            },
+            {
+                "img": "images/jobs/red_wizard.png",
+                "codes": "red_mage_job,red_wizard_job"
+            }
+        ]
+    }
+]

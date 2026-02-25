@@ -1,0 +1,668 @@
+[
+    {
+        "name": "World Map",
+        "chest_unopened_img": "images/items/chest_closed.png",
+        "chest_opened_img": "images/items/chest_open.png",
+        "children": [
+            {
+                "name": "Chaos Shrine (Present)",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Unlocked",
+                        "access_rules": [],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "Locked",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "Garland",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 796,
+                        "y": 718
+                    }
+                ]
+            },
+            {
+                "name": "Chaos Shrine (Past)",
+                "access_rules": ["$hasAllCrystals"],
+                "sections": [
+                    {
+                        "name": "3F",
+                        "access_rules": [],
+                        "item_count": 2
+                    },
+                    {
+                        "name": "B2 (Fire)",
+                        "access_rules": [],
+                        "item_count": 4
+                    },
+                    {
+                        "name": "B4 (Air)",
+                        "access_rules": [],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chaos",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 796,
+                        "y": 674
+                    }
+                ]
+            },
+            {
+                "name": "Castle Cornelia",
+                "access_rules": [],
+                "sections": [
+                    {
+                        "name": "Treasury",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 6
+                    },
+                    {
+                        "name": "Princess",
+                        "access_rules": ["garland"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 948,
+                        "y": 960
+                    }
+                ]
+            },
+            {
+                "name": "Matoya's Cave",
+                "access_rules": ["bridge"],
+                "sections": [
+                    {
+                        "name": "Chests",
+                        "access_rules": [],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "Matoya",
+                        "access_rules": ["crystal_eye"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1050,
+                        "y": 688
+                    }
+                ]
+            },
+            {
+                "name": "Pravoka",
+                "access_rules": ["bridge"],
+                "sections": [
+                    {
+                        "name": "Bikke",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1309,
+                        "y": 888
+                    }
+                ]
+            },
+            {
+                "name": "Marsh Cave",
+                "access_rules": ["$hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "B2",
+                        "access_rules": [],
+                        "item_count": 7
+                    },
+                    {
+                        "name": "B3",
+                        "access_rules": [],
+                        "item_count": 8
+                    },                    
+                    {
+                        "name": "B3 (Locked)",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 3
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 633,
+                        "y": 1426
+                    }
+                ]
+            },
+            {
+                "name": "Western Keep",
+                "access_rules": ["$hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "Treasury",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "Astos",
+                        "access_rules": ["crown"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 636,
+                        "y": 1100
+                    }
+                ]
+            },
+            {
+                "name": "Elven Castle",
+                "access_rules": ["$hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "Treasury",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 4
+                    },
+                    {
+                        "name": "Elf Prince",
+                        "access_rules": ["jolt_tonic"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 848,
+                        "y": 1337
+                    }
+                ]
+            },
+            {
+                "name": "Mount Duergar",
+                "access_rules": ["$hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "access_rules": [],
+                        "item_count": 2
+                    },
+                    {
+                        "name": "Treasury",
+                        "access_rules": ["mystic_key"],
+                        "item_count": 8
+                    },
+                    {
+                        "name": "Smitt",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 630,
+                        "y": 935
+                    }
+                ]
+            },
+            {
+                "name": "Cavern of Earth",
+                "access_rules": ["canal_open, ship", "airship"],
+                "sections": [
+                    {
+                        "name": "B1",
+                        "access_rules": [],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "B2",
+                        "access_rules": [],
+                        "item_count": 6
+                    },
+                    {
+                        "name": "B3",
+                        "access_rules": ["earth_rod"],
+                        "item_count": 5
+                    },
+                    {
+                        "name": "B4",
+                        "access_rules": ["earth_rod"],
+                        "item_count": 8
+                    },
+                    {
+                        "name": "Lich",
+                        "access_rules": ["earth_rod"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 408,
+                        "y": 1127
+                    }
+                ]
+            },
+            {
+                "name": "Giants Cave",
+                "access_rules": ["star_ruby, canal, ship", "star_ruby, airship"],
+                "sections": [
+                    {
+                        "name": "Chests",
+                        "access_rules": [],
+                        "item_count": 4
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 182,
+                        "y": 1056
+                    }
+                ]
+            },
+            {
+                "name": "Sages Cave",
+                "access_rules": ["star_ruby, canal, ship", "star_ruby, airship"],
+                "sections": [
+                    {
+                        "name": "Sarda",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 186,
+                        "y": 1147
+                    }
+                ]
+            },
+            {
+                "name": "Crescent Lake",
+                "access_rules": ["bridge, canoe", "airship"],
+                "sections": [
+                    {
+                        "name": "Canoe Sage",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1365,
+                        "y": 1310
+                    }
+                ]
+            },
+            {
+                "name": "Ryukahn Desert",
+                "access_rules": ["levistone, canoe"],
+                "sections": [
+                    {
+                        "name": "Airship",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1362,
+                        "y": 1440
+                    }
+                ]
+            },
+            {
+                "name": "Mount Gulg",
+                "access_rules": ["bridge, canoe", "airship"],
+                "sections": [
+                    {
+                        "name": "B2",
+                        "access_rules": [],
+                        "item_count": 18
+                    },
+                    {
+                        "name": "B4",
+                        "access_rules": [],
+                        "item_count": 15
+                    },
+                    {
+                        "name": "B5",
+                        "access_rules": [],
+                        "item_count": 4
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1178,
+                        "y": 1226
+                    }
+                ]
+            },
+            {
+                "name": "Cavern of Ice",
+                "access_rules": ["bridge, canoe", "airship"],
+                "sections": [
+                    {
+                        "name": "B1",
+                        "access_rules": [],
+                        "item_count": 5
+                    },
+                    {
+                        "name": "B2",
+                        "access_rules": [],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "B3",
+                        "access_rules": [],
+                        "item_count": 8
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1254,
+                        "y": 1104
+                    }
+                ]
+            },
+            {
+                "name": "Citadel of Trials",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "2F",
+                        "access_rules": [],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "3F",
+                        "access_rules": [],
+                        "item_count": 9
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 805,
+                        "y": 240
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Caves (Forest)",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "access_rules": [],
+                        "item_count": 3
+                    },
+                    {
+                        "name": "West Room",
+                        "access_rules": [],
+                        "item_count": 4
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 722,
+                        "y": 370
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Caves (Marsh)",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "Chests",
+                        "access_rules": [],
+                        "item_count": 3
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 492,
+                        "y": 265
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Caves (Plains)",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "Chests",
+                        "access_rules": [],
+                        "item_count": 3
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 573,
+                        "y": 335
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Caves",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "Bahamut",
+                        "access_rules": ["rats_tail"],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 604,
+                        "y": 280
+                    }
+                ]
+            },
+            {
+                "name": "Onrac Desert",
+                "access_rules": ["ship"],
+                "sections": [
+                    {
+                        "name": "Caravan",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 154,
+                        "y": 274
+                    }
+                ]
+            },
+            {
+                "name": "Waterfall Caverns",
+                "access_rules": ["canoe"],
+                "sections": [
+                    {
+                        "name": "Chests",
+                        "access_rules": [],
+                        "item_count": 6
+                    },
+                    {
+                        "name": "CubeBot",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 337,
+                        "y": 130
+                    }
+                ]
+            },
+            {
+                "name": "Gaia",
+                "access_rules": ["airship"],
+                "sections": [
+                    {
+                        "name": "Fairy",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1380,
+                        "y": 136
+                    }
+                ]
+            },
+            {
+                "name": "Sunken Shrine",
+                "access_rules": ["oxyale, airship"],
+                "sections": [
+                    {
+                        "name": "2F",
+                        "access_rules": [],
+                        "item_count": 10
+                    },
+                    {
+                        "name": "3F",
+                        "access_rules": [],
+                        "item_count": 4
+                    },
+                    {
+                        "name": "4F",
+                        "access_rules": [],
+                        "item_count": 5
+                    },
+                    {
+                        "name": "5F",
+                        "access_rules": [],
+                        "item_count": 13
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 413,
+                        "y": 335
+                    }
+                ]
+            },
+            {
+                "name": "Lufenia",
+                "access_rules": ["$hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "Lufenian Man",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1480,
+                        "y": 572
+                    }
+                ]
+            },
+            {
+                "name": "Mirage Tower",
+                "access_rules": ["chime, $hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "1F",
+                        "access_rules": [],
+                        "item_count": 8
+                    },
+                    {
+                        "name": "2F",
+                        "access_rules": [],
+                        "item_count": 10
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1188,
+                        "y": 364
+                    }
+                ]
+            },
+            {
+                "name": "Flying Fortress",
+                "access_rules": ["chime, warp_cube, $hasAnyShip"],
+                "sections": [
+                    {
+                        "name": "1F",
+                        "access_rules": [],
+                        "item_count": 10
+                    },
+                    {
+                        "name": "2F",
+                        "access_rules": [],
+                        "item_count": 10
+                    },
+                    {
+                        "name": "3F",
+                        "access_rules": [],
+                        "item_count": 14
+                    },
+                    {
+                        "name": "Tiamat",
+                        "access_rules": [],
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "world_map",
+                        "x": 1188,
+                        "y": 320
+                    }
+                ]
+            }
+        ]
+    }
+]

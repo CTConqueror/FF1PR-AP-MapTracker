@@ -1,0 +1,185 @@
+[
+	// Crystals
+	{
+        "name": "Earth Crystal",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/items/earth_off.png",
+                "codes": "earth_crystal"
+            },
+            {
+                "img": "images/items/earth_on.png",
+                "codes": "earth_crystal,earth_crystal_on"
+            }
+        ]
+    },
+    {
+        "name": "Fire Crystal",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/items/fire_off.png",
+                "codes": "fire_crystal"
+            },
+            {
+                "img": "images/items/fire_on.png",
+                "codes": "fire_crystal,fire_crystal_on"
+            }
+        ]
+    },
+    {
+        "name": "Water Crystal",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/items/water_off.png",
+                "codes": "water_crystal"
+            },
+            {
+                "img": "images/items/water_on.png",
+                "codes": "water_crystal,water_crystal_on"
+            }
+        ]
+    },
+    {
+        "name": "Wind Crystal",
+        "allow_disabled": false,
+        "type": "progressive",
+        "stages": [
+            {
+                "img": "images/items/wind_off.png",
+                "codes": "wind_crystal"
+            },
+            {
+                "img": "images/items/wind_on.png",
+                "codes": "wind_crystal,wind_crystal_on"
+            }
+        ]
+    },
+
+	// Key Items
+	{
+		"name": "Lute",
+		"type": "toggle",
+		"img": "images/items/lute.png",
+		"codes": "lute"
+	},
+	{
+		"name": "Jolt Tonic",
+		"type": "toggle",
+		"img": "images/items/jolt_tonic.png",
+		"codes": "jolt_tonic"
+	},
+	{
+		"name": "Ship",
+		"type": "toggle",
+		"img": "images/items/ship.png",
+		"codes": "ship"
+	},
+	{
+		"name": "Crown",
+		"type": "toggle",
+		"img": "images/items/crown.png",
+		"codes": "crown"
+	},
+	{
+		"name": "Crystal Eye",
+		"type": "toggle",
+		"img": "images/items/crystal_eye.png",
+		"codes": "crystal_eye"
+	},
+	{
+		"name": "Mystic Key",
+		"type": "toggle",
+		"img": "images/items/mystic_key.png",
+		"codes": "mystic_key"
+	},
+	{
+		"name": "Nitro Powder",
+		"type": "toggle",
+		"img": "images/items/nitro_powder.png",
+		"codes": "nitro_powder"
+	},
+	{
+		"name": "Star Ruby",
+		"type": "toggle",
+		"img": "images/items/star_ruby.png",
+		"codes": "star_ruby"
+	},
+	{
+		"name": "Earth Rod",
+		"type": "toggle",
+		"img": "images/items/earth_rod.png",
+		"codes": "earth_rod"
+	},
+	{
+		"name": "Canoe",
+		"type": "toggle",
+		"img": "images/items/canoe.png",
+		"codes": "canoe"
+	},
+	{
+		"name": "Levistone",
+		"type": "toggle",
+		"img": "images/items/levistone.png",
+		"codes": "levistone"
+	},
+	{
+		"name": "Rat's Tail",
+		"type": "toggle",
+		"img": "images/items/rats_tail.png",
+		"codes": "rats_tail"
+	},
+	{
+		"name": "Warp Cube",
+		"type": "toggle",
+		"img": "images/items/warp_cube.png",
+		"codes": "warp_cube"
+	},
+	{
+		"name": "Oxyale",
+		"type": "toggle",
+		"img": "images/items/oxyale.png",
+		"codes": "oxyale"
+	},
+	{
+		"name": "Rosetta Stone",
+		"type": "toggle",
+		"img": "images/items/rosetta_stone.png",
+		"codes": "rosetta_stone"
+	},
+	{
+		"name": "Chime",
+		"type": "toggle",
+		"img": "images/items/chime.png",
+		"codes": "chime"
+	},
+	{
+		"name": "Adamantite",
+		"type": "toggle",
+		"img": "images/items/adamantite.png",
+		"codes": "adamantite"
+	},
+	{
+		"name": "Bottled Faerie",
+		"type": "toggle",
+		"img": "images/items/bottled_faerie.png",
+		"codes": "bottled_faerie"
+	},
+	{
+		"name": "Airship",
+		"type": "toggle",
+		"img": "images/items/airship.png",
+		"codes": "airship"
+	},
+	{
+		"name": "Lute Tablature",
+		"type": "toggle",
+		"img": "images/items/lute_tablature.png",
+		"codes": "lute_tablature"
+	}
+]
