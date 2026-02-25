@@ -1,6 +1,4 @@
 {
-  //sets the trackers layout
-  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
   "tracker_default": {
     "type": "container",
     "background": "#000000",
@@ -51,32 +49,6 @@
                 "type": "map",
                 "maps": [
                   "world_map"
-                ]
-              }
-            },
-            {
-              "title": "Dungeon Maps",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                    "title": "Chaos Shrine",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "chaos_shrine"
-                      ]
-                    }
-                  },
-                  {
-                    "title": "Marsh Cave",
-                    "content": {
-                      "type": "map",
-                      "maps": [
-                        "marsh_cave"
-                      ]
-                    }
-                  }
                 ]
               }
             }
