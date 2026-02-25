@@ -1,8 +1,6 @@
-# FF1PR Pack for PopTracker
+# Final Fantasy Pixel Remaster Pack for PopTracker
 
-This a template tracker package for PopTracker.
-
-Includes examples for AP and SNES memory autotracking and beginner-friendly explanations in the pack.
+This a PopTracker package for the Final Fantasy Pixel Remaster Archipelago randomizer.  It includes map tracking and supports AP auto-tracking.
 
 ## Installation
 
