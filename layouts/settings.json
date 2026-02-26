@@ -1,0 +1,26 @@
+{
+    "goals_group": {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "item_size": 80,
+        "rows": [
+            [
+                "crystals_required",
+                "lute_tabs_required"
+            ]
+        ]
+    },
+    "logic_group": {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "item_size": 80,
+        "rows": [
+            [
+                "early_bridge",
+                "northern_docks"
+            ]
+        ]
+    },
+}

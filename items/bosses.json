@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Garland",
+		"type": "toggle",
+		"img": "images/bosses/garland.png",
+		"codes": "garland"
+	},
+	{
+		"name": "Astos",
+		"type": "toggle",
+		"img": "images/bosses/astos.png",
+		"codes": "astos"
+	},
+	{
+		"name": "Marilith",
+		"type": "toggle",
+		"img": "images/bosses/marilith.png",
+		"codes": "marilith"
+	},
+	{
+		"name": "Lich",
+		"type": "toggle",
+		"img": "images/bosses/lich.png",
+		"codes": "lich"
+	},
+	{
+		"name": "Kraken",
+		"type": "toggle",
+		"img": "images/bosses/kraken.png",
+		"codes": "kraken"
+	},
+	{
+		"name": "Tiamat",
+		"type": "toggle",
+		"img": "images/bosses/tiamat.png",
+		"codes": "tiamat"
+	},
+	{
+		"name": "Chaos",
+		"type": "toggle",
+		"img": "images/bosses/chaos.png",
+		"codes": "chaos"
+	}
+]

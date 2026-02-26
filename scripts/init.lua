@@ -21,6 +21,7 @@ ScriptHost:LoadScript("scripts/logic/logic.lua")
 -- Items
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/jobs.json")
+Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/settings.json")
 
 if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
@@ -28,6 +29,7 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     Tracker:AddMaps("maps/maps.json")
     -- Locations
     Tracker:AddLocations("locations/world_map.json")
+    Tracker:AddLocations("locations/dungeons/marsh_cave.json")
 end
 
 -- Layout
@@ -35,6 +37,7 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/item_groups.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
+Tracker:AddLayouts("layouts/settings.json")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then

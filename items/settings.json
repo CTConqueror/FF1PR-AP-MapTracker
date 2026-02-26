@@ -1,32 +1,38 @@
 [
 	{
         "name": "Crystals Required",
-        "type": "progressive",
-        "loop": false,
-        "allow_disabled": false,
-        "initial_stage_idx": 1,
-        "codes": "crystals_required",
-        "stages": [
-            {
-                "img": "images/settings/1.png",
-                "codes": "crystal_req_1",
-                "inherit_codes": true
-            },
-            {
-                "img": "images/settings/2.png",
-                "codes": "crystal_req_2",
-                "inherit_codes": true
-            },
-            {
-                "img": "images/settings/3.png",
-                "codes": "crystal_req_3",
-                "inherit_codes": true
-            },
-            {
-                "img": "images/settings/4.png",
-                "codes": "crystal_req_4",
-                "inherit_codes": true
-            }
-        ]
+        "type": "consumable",
+        "img": "images/settings/crystals.png",
+        "max_quantity": 4,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 4,
+        "overlay_font_size": 24,
+        "codes": "crystals_required"
+    },
+    {
+        "name": "Lute Tabs Required",
+        "type": "consumable",
+        "img": "images/settings/lute_tab.png",
+        "max_quantity": 40,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
+        "overlay_font_size": 24,
+        "codes": "lute_tabs_required"
+    },
+    {
+        "name": "Early Bridge",
+        "type": "toggle",
+        "initial_active_state": false,
+        "img": "images/settings/bridge.png",
+        "codes": "early_bridge",
+    },
+    {
+        "name": "Northern Docks",
+        "type": "toggle",
+        "initial_active_state": false,
+        "img": "images/settings/northern_docks.png",
+        "codes": "northern_docks"
     }
 ]
