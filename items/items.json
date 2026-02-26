@@ -178,7 +178,11 @@
 	},
 	{
 		"name": "Lute Tablature",
-		"type": "toggle",
+		"type": "consumable",
+		"max_quantity": 40,
+        "increment": 1,
+        "decrement": 1,
+        "initial_quantity": 0,
 		"img": "images/items/lute_tablature.png",
 		"codes": "lute_tablature"
 	}

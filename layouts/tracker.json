@@ -84,67 +84,6 @@
 									"world_map"
 								]
 							}
-						},
-						{
-							"title": "Dungeons",
-							"content": {
-								"type": "tabbed",
-								"tabs": [
-									{
-										"title": "Chaos Shrine",
-										"content": {
-											"type": "tabbed",
-											"tabs": [
-												{
-													"title": "Present",
-													"content": {
-														"type": "map",
-														"maps": [
-															"chaos_shrine_present"
-														]
-													}
-												},
-												{
-													"title": "Past",
-													"content": {
-														"type": "map",
-														"maps": [
-															"chaos_shrine_present"
-														]
-													}
-												}
-
-											]
-										}
-									},
-									{
-										"title": "Marsh Cave",
-										"content": {
-											"type": "tabbed",
-											"tabs": [
-												{
-													"title": "B2",
-													"content": {
-														"type": "map",
-														"maps": [
-															"marsh_cave_b2"
-														]
-													}
-												},
-												{
-													"title": "B3",
-													"content": {
-														"type": "map",
-														"maps": [
-															"marsh_cave_b3"
-														]
-													}
-												}
-											]
-										}
-									}
-								]
-							}
 						}
 					]
 				}

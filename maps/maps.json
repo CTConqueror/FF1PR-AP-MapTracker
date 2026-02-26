@@ -4,23 +4,5 @@
     "location_size": 32,
     "location_border_thickness": 4,
     "img": "images/maps/world_map.png"
-  },
-  {
-    "name": "chaos_shrine_present",
-    "location_size": 16,
-    "location_border_thickness": 4,
-    "img": "images/maps/chaos_shrine_present.png"
-  },
-  {
-    "name": "marsh_cave_b2",
-    "location_size": 16,
-    "location_border_thickness": 4,
-    "img": "images/maps/marsh_cave_b2.png"
-  },
-  {
-    "name": "marsh_cave_b3",
-    "location_size": 16,
-    "location_border_thickness": 4,
-    "img": "images/maps/marsh_cave_b3.png"
   }
 ]

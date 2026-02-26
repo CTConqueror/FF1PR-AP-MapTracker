@@ -20,26 +20,30 @@
 			[
 				"lute",
 				"lute_tablature",
-				"nitro_powder",
-				"mystic_key",
-				"earth_rod",
-				"rats_tail"
+				"crown",
+				"crystal_eye",
+				"jolt_tonic"
 			],
 			[
-				"crystal_eye",
+				"mystic_key",
+				"nitro_powder",
 				"star_ruby",
+				"earth_rod",
+				"rats_tail"	
+			],
+			[
+				"bottled_faerie",
 				"chime",
 				"warp_cube",
-				"bottled_faerie",
+				"rosetta_stone",
 				"adamantite"
 			],
 			[
-				"canoe",
 				"ship",
+				"canoe",
 				"levistone",
 				"airship",
-				"oxyale",
-				"rosetta_stone"
+				"oxyale",	
 			]
 		]
 	},
@@ -51,7 +55,9 @@
 			[
 				"warrior_job",
 				"thief_job",
-				"monk_job",
+				"monk_job"
+			],
+			[
 				"white_mage_job",
 				"black_mage_job",
 				"red_mage_job"
@@ -61,7 +67,7 @@
 	"bosses_group": {
 		"type": "itemgrid",
 		"h_alignment": "left",
-		"item_size": 60,
+		"item_size": 70,
 		"item_margin": "1,2",
 		"rows": [
 			[
