@@ -1,65 +1,29 @@
 [
 	// Crystals
 	{
-        "name": "Earth Crystal",
-        "allow_disabled": false,
-        "type": "progressive",
-        "stages": [
-            {
-                "img": "images/items/earth_off.png",
-                "codes": "earth_crystal"
-            },
-            {
-                "img": "images/items/earth_on.png",
-                "codes": "earth_crystal,earth_crystal_on"
-            }
-        ]
-    },
-    {
-        "name": "Fire Crystal",
-        "allow_disabled": false,
-        "type": "progressive",
-        "stages": [
-            {
-                "img": "images/items/fire_off.png",
-                "codes": "fire_crystal"
-            },
-            {
-                "img": "images/items/fire_on.png",
-                "codes": "fire_crystal,fire_crystal_on"
-            }
-        ]
-    },
-    {
-        "name": "Water Crystal",
-        "allow_disabled": false,
-        "type": "progressive",
-        "stages": [
-            {
-                "img": "images/items/water_off.png",
-                "codes": "water_crystal"
-            },
-            {
-                "img": "images/items/water_on.png",
-                "codes": "water_crystal,water_crystal_on"
-            }
-        ]
-    },
-    {
-        "name": "Wind Crystal",
-        "allow_disabled": false,
-        "type": "progressive",
-        "stages": [
-            {
-                "img": "images/items/wind_off.png",
-                "codes": "wind_crystal"
-            },
-            {
-                "img": "images/items/wind_on.png",
-                "codes": "wind_crystal,wind_crystal_on"
-            }
-        ]
-    },
+		"name": "Earth Crystal",
+		"type": "toggle",
+		"img": "images/items/earth_on.png",
+		"codes": "earth_crystal"
+	},
+	{
+		"name": "Fire Crystal",
+		"type": "toggle",
+		"img": "images/items/fire_on.png",
+		"codes": "fire_crystal"
+	},
+	{
+		"name": "Water Crystal",
+		"type": "toggle",
+		"img": "images/items/water_on.png",
+		"codes": "water_crystal"
+	},
+	{
+		"name": "Wind Crystal",
+		"type": "toggle",
+		"img": "images/items/wind_on.png",
+		"codes": "wind_crystal"
+	},
 
 	// Key Items
 	{

@@ -1,21 +1,17 @@
 {
-  //sets the layout for the broadcast view
-  "tracker_broadcast": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "layout",
-            "key": "shared_item_grid"
-          }
-        ]
-      }
-    ]
-  }
+	"tracker_broadcast": {
+		"type": "array",
+		"orientation": "vertical",
+		"margin": "0,0",
+		"content": [
+			{
+				"type": "layout",
+				"key": "key_items_group"
+			},
+			{
+				"type": "layout",
+				"key": "crystals_group_broadcast"
+			}
+		]
+	}
 }

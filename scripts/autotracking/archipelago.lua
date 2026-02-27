@@ -113,7 +113,30 @@ end
 
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
-	-- put any code here that slot_data should affect (toggling setting items for example)
+	-- Required Crystals
+	local crystals_req = Tracker:FindObjectForCode("crystals_required")
+	crystals_req.AcquiredCount = slot_data["crystals_required"]
+
+	-- Required Lute Tablatures
+	local lute_tabs_req = Tracker:FindObjectForCode("lute_tabs_required")
+	lute_tabs_req.AcquiredCount = slot_data["lute_tablatures"]
+
+	-- Early Progression
+	local early_bridge = Tracker:FindObjectForCode("early_bridge")
+	if slot_data["early_progression"] == 0 then
+		early_bridge.Active = true
+	else
+		early_bridge.Active = false
+	end
+
+	-- Bridge Open
+	local northern_docks = Tracker:FindObjectForCode("northern_docks")
+	if slot_data["northern_docks"] == 1 then
+		northern_docks.Active = true
+	else
+		northern_docks.Active = false
+	end
+
 end
 
 -- called right after an AP slot is connected

@@ -40,5 +40,11 @@
 		"type": "toggle",
 		"img": "images/bosses/chaos.png",
 		"codes": "chaos"
+	},
+	{
+		"name": "Vampire",
+		"type": "toggle",
+		"img": "images/bosses/vampire.png",
+		"codes": "vampire"
 	}
 ]
