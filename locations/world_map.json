@@ -19,8 +19,7 @@
                         "name": "Garland",
                         "chest_unopened_img": "images/npcs/garland.png",
                         "chest_opened_img": "images/npcs/garland_off.png",
-                        "hosted_item": "garland",
-                        
+                        "hosted_item": "garland"
                     }
                 ],
                 "map_locations": [
@@ -49,7 +48,7 @@
                     },
                     {
                         "name": "Chaos",
-                        "hosted_item": "chaos",
+                        "hosted_item": "chaos"
                     }
                 ],
                 "map_locations": [
@@ -113,7 +112,7 @@
                     {
                         "name": "Bikke",
                         "chest_unopened_img": "images/npcs/bikke.png",
-                        "chest_opened_img": "images/npcs/bikke_off.png",
+                        "chest_opened_img": "images/npcs/bikke_off.png"
                     }
                 ],
                 "map_locations": [
@@ -393,7 +392,7 @@
             },
             {
                 "name": "Citadel of Trials",
-                "access_rules": ["airship, canoe", "ship, nitro_powder, canoe"],
+                "access_rules": ["airship, canoe, crown", "ship, nitro_powder, canoe, crown"],
                 "sections": [
                     {
                         "name": "2F",
