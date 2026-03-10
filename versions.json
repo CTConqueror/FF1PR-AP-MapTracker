@@ -8,6 +8,16 @@
                 "Initial placement of items and access logic",
                 "Basic Archipelago auto-tracking support"
             ]
+        },
+        {
+            "package_version": "0.1.1",
+            "download_url": "https://github.com/CTConqueror/FF1PR-AP-MapTracker/releases/download/0.1.1/FF1PR-AP-Tracker-0.1.1.zip",
+            "sha256": "5e72b8cc443b94980cddf43fd93c47f96142f729dc5cfff886fcd55fe8112e5d",
+            "changelog": [
+                "Fixed Bahamut location",
+                "Fixed Onrac Check logic",
+                "Fixed Earth Cave logic and chest count"
+            ]
         }
     ]
 }
