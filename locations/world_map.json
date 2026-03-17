@@ -606,7 +606,7 @@
             },
             {
                 "name": "Mirage Tower",
-                "access_rules": ["chime, airship", "chime, ship, nitro_powder"],
+                "access_rules": ["chime, airship", "chime, northern_docks, ship, nitro_powder"],
                 "sections": [
                     {
                         "name": "1F",
