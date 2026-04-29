@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.1.3",
+            "download_url": "https://github.com/CTConqueror/FF1PR-AP-MapTracker/releases/download/0.1.3/FF1PR-AP-MapTracker-0.1.3.zip",
+            "sha256": "aa09e28c7529ccd23a8c2996b4540c1a26bf5955fbe54768e73525a769586780",
+            "changelog": [
+                "Fixed some location access rules relate dto Marsh Cave Path setting"
+            ]
+        },
+        {
             "package_version": "0.1.2",
             "download_url": "https://github.com/CTConqueror/FF1PR-AP-MapTracker/releases/download/0.1.2/FF1PR-AP-Tracker-0.1.2.zip",
             "sha256": "35b05355174c66ab1adb2e6a72a65019c6575a9d678cf45dab1af17c7f5535d9",
