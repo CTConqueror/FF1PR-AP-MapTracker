@@ -84,7 +84,7 @@
             },
             {
                 "name": "Matoya's Cave",
-                "access_rules": ["early_bridge", "$hasAnyShip", "$isEarlyMarshCave, canoe"],
+                "access_rules": ["early_bridge", "$hasAnyShip"],
                 "sections": [
                     {
                         "name": "Chests",
@@ -107,7 +107,7 @@
             },
             {
                 "name": "Pravoka",
-                "access_rules": ["early_bridge", "$hasAnyShip", "$isEarlyMarshCave, canoe"],
+                "access_rules": ["early_bridge", "$hasAnyShip"],
                 "sections": [
                     {
                         "name": "Bikke",
@@ -335,7 +335,7 @@
             },
             {
                 "name": "Mount Gulg",
-                "access_rules": ["early_bridge, canoe", "$isEarlyMarshCave, canoe", "airship"],
+                "access_rules": ["early_bridge, ship, canoe", "$isEarlyMarshCave, canoe", "airship"],
                 "sections": [
                     {
                         "name": "B2",
@@ -364,7 +364,7 @@
             },
             {
                 "name": "Cavern of Ice",
-                "access_rules": ["early_bridge, canoe", "ship, canoe", "$isEarlyMarshCave, canoe", "airship"],
+                "access_rules": ["early_bridge, canoe", "ship, canoe", "airship"],
                 "sections": [
                     {
                         "name": "B1",
