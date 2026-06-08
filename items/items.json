@@ -1,5 +1,4 @@
 [
-	// Crystals
 	{
 		"name": "Earth Crystal",
 		"type": "toggle",
@@ -24,8 +23,6 @@
 		"img": "images/items/wind_on.png",
 		"codes": "wind_crystal"
 	},
-
-	// Key Items
 	{
 		"name": "Lute",
 		"type": "toggle",
@@ -64,9 +61,17 @@
 	},
 	{
 		"name": "Nitro Powder",
-		"type": "toggle",
-		"img": "images/items/nitro_powder.png",
-		"codes": "nitro_powder"
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/items/nitro_powder.png",
+				"codes": "nitro_powder"
+			},
+			{
+				"img": "images/items/nitro_powder_done.png",
+				"codes": "nitro_powder, canal_open"
+			}
+		]
 	},
 	{
 		"name": "Star Ruby",
@@ -112,9 +117,17 @@
 	},
 	{
 		"name": "Rosetta Stone",
-		"type": "toggle",
-		"img": "images/items/rosetta_stone.png",
-		"codes": "rosetta_stone"
+		"type": "progressive",
+		"stages": [
+			{
+				"img": "images/items/rosetta_stone.png",
+				"codes": "rosetta_stone"
+			},
+			{
+				"img": "images/items/rosetta_stone_done.png",
+				"codes": "rosetta_stone, rosetta_stone_translated, dr_unne"
+			}
+		]
 	},
 	{
 		"name": "Chime",
@@ -144,9 +157,9 @@
 		"name": "Lute Tablature",
 		"type": "consumable",
 		"max_quantity": 40,
-        "increment": 1,
-        "decrement": 1,
-        "initial_quantity": 0,
+		"increment": 1,
+		"decrement": 1,
+		"initial_quantity": 0,
 		"img": "images/items/lute_tablature.png",
 		"codes": "lute_tablature"
 	}

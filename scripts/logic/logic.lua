@@ -40,7 +40,7 @@ function getCrystalCount()
 end
 
 function isEarlyMarshCave()
-	if has("early_bridge") then
+	if has("early_progression") then
 		return false
 	else
 		return true

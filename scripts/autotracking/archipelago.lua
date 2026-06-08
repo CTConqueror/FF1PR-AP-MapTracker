@@ -122,11 +122,11 @@ function apply_slot_data(slot_data)
 	lute_tabs_req.AcquiredCount = slot_data["lute_tablatures"]
 
 	-- Early Progression
-	local early_bridge = Tracker:FindObjectForCode("early_bridge")
+	local early_progression = Tracker:FindObjectForCode("early_progression")
 	if slot_data["early_progression"] == 0 then
-		early_bridge.Active = true
+		early_progression.Active = true
 	else
-		early_bridge.Active = false
+		early_progression.Active = false
 	end
 
 	-- Bridge Open

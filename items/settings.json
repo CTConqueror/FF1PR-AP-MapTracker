@@ -22,11 +22,11 @@
         "codes": "lute_tabs_required"
     },
     {
-        "name": "Early Bridge",
-        "type": "toggle",
+        "name": "Early Progression",
+        "type": "progressive",
         "initial_active_state": false,
         "img": "images/settings/bridge.png",
-        "codes": "early_bridge",
+        "codes": "early_progression"
     },
     {
         "name": "Northern Docks",
