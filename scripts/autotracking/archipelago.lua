@@ -16,8 +16,10 @@ end
 print("---------------------------------------------------------------------")
 print("")
 
+ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
+
 -- used for hint tracking to quickly map hint status to a value from the Highlight enum
 HINT_STATUS_MAPPING = {}
 if Highlight then
@@ -34,6 +36,8 @@ CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
+local ds_keys = require("scripts.autotracking.data_storage_mapping")
+
 -- gets the data storage key for hints for the current player
 -- returns nil when not connected to AP
 function getHintDataStorageKey()
@@ -44,6 +48,54 @@ function getHintDataStorageKey()
 		return nil
 	end
 	return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+end
+
+function getGameStateDataStorageKeys()
+	local key_prefix = "Slot:" .. Archipelago.PlayerNumber .. ":"
+
+	local key_list = {}
+
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getGameStateDataStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+
+	for key, value in pairs(ds_keys.KEY_SET) do
+		key_list[#key_list + 1] = key_prefix .. key
+	end
+
+	return key_list
+end
+
+function handleDataStorageChange(key, newValue, oldValue)
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print(string.format("handleDataStorageChange: key %s changed, old: %s - new: %s", key, oldValue, newValue))
+	end
+
+	if newValue == nil then
+		return
+	end
+
+	local stripped_key = string.match(key, "([^:]+)$")
+	local tracker_codes = ds_keys.KEY_SET[stripped_key]
+
+	if not tracker_codes then
+		return
+	end
+
+	for index, value in ipairs(tracker_codes) do
+		local obj = Tracker:FindObjectForCode(value)
+		obj.Active = newValue
+
+		if obj.Type == "progressive" or obj.Type == "progressive_toggle" then
+			local stage = 0
+			if newValue then stage = 2 end
+			obj.CurrentStage = stage
+		end
+	end
+
 end
 
 -- resets an item to its initial state
@@ -203,16 +255,17 @@ function onClear(slot_data)
 		-- add snes interface functions here
 	end
 	-- setup data storage tracking for hint tracking
-	local data_strorage_keys = {}
+	local data_storage_keys = {}
 	if PopVersion >= "0.32.0" then
-		data_strorage_keys = { getHintDataStorageKey() }
+		data_storage_keys = getGameStateDataStorageKeys()
+		table.insert(data_storage_keys, getHintDataStorageKey())
 	end
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
-	Archipelago:SetNotify(data_strorage_keys)
+	Archipelago:SetNotify(data_storage_keys)
 	-- gets the current value for the data storage keys
 	-- triggers callback in the Retrieved handler when result is received
-	Archipelago:Get(data_strorage_keys)
+	Archipelago:Get(data_storage_keys)
 	Tracker.BulkUpdate = false
 end
 
@@ -335,9 +388,21 @@ end
 -- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
 -- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
 function onDataStorageUpdate(key, value, oldValue)
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print(string.format("called onDataStorageUpdate: %s", key))
+	end
+
 	--if you plan to only use the hints key, you can remove this if
 	if key == getHintDataStorageKey() then
 		onHintsUpdate(value)
+	end
+
+	local ds_keys = getGameStateDataStorageKeys()
+	for _, ds_value in ipairs(ds_keys) do
+		if ds_value == key then
+			handleDataStorageChange(key, value, oldValue)
+			break
+		end
 	end
 end
 

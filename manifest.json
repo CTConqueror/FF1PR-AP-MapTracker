@@ -2,7 +2,7 @@
     "name": "Final Fantasy Pixel Remaster Map Tracker",
     "game_name": "Final Fantasy Pixel Remaster",
     "package_uid": "ff1pr_tracker",
-    "package_version": "0.1.4",
+    "package_version": "0.1.5",
     "author": "CTConqueror",
     "platform": "PC",
     "variants": {
