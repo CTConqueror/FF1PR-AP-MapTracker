@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.1.5",
+            "download_url": "https://github.com/CTConqueror/FF1PR-AP-MapTracker/releases/download/0.1.5/FF1PR-AP-MapTracker-0.1.5.zip",
+            "sha256": "03aabc5ab25293fc067012986a722f0864778a1922f2592d2eb0e370891d2fc4",
+            "changelog": [
+                "Added autotracking for new data storage flags"
+            ]
+        },
+        {
             "package_version": "0.1.4",
             "download_url": "https://github.com/CTConqueror/FF1PR-AP-MapTracker/releases/download/0.1.4/FF1PR-AP-MapTracker-0.1.4.zip",
             "sha256": "7fbef13dba546bd7a0fa8d747de89413b16b8c82d45debba8bc70d75a546daca",
